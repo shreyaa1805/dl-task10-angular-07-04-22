@@ -1,0 +1,59 @@
+.registration-form {
+    background-image: url('../../assets/scene.jpg');
+    background-size: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+
+.login-form {
+    width: 320px;
+    height: 600px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 60%;
+    left: 60%;
+    position: relative;
+    box-sizing: border-box;
+    padding: 70px 30px;
+    margin: 0;
+    border-radius: 30px;
+}
+
+.login-form h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+label {
+    width: 240px;
+    display: inline-block;
+    text-align: left;
+    border-radius: 30px;
+}
+
+.button {
+    background-color: rgb(235, 177, 18);
+    color: white;
+    padding: 10px 12px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background: #d4af7a;
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+
+#ip1 {
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid black;
+}

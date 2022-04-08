@@ -1,0 +1,63 @@
+<form [formGroup]="registrationForm">
+    <div class="registration-form">
+
+        <div class="login-form">
+            <h1>Registration Form</h1>
+            <div class="form-group">
+                <label>First Name</label>&nbsp;
+                <input type="text" id="ip1" name="fname" class="form-control" formControlName="fname">
+                <div *ngIf="registrationForm.controls['fname'].touched && registrationForm.controls['fname'].hasError('required')">
+
+
+                    <span class="is-invalid">Name is required</span>
+                </div>
+
+
+            </div>
+
+            <div class="form-group">
+                <label>Last Name</label>&nbsp;
+                <input type="text" id="ip1" name="lname" class="form-control" formControlName="lname">
+                <div *ngIf="registrationForm.controls['lname'].touched && registrationForm.controls['lname'].hasError('required')">
+
+
+                    <span class="is-invalid">Name is required</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>&nbsp;
+                <input type="email" id="ip1" name="email" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label>Date Of Birth</label>&nbsp;
+                <input type="date" id="ip1" name="dob" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Address</label>&nbsp;
+                <input type="textarea" id="ip1" name="address" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Gender</label>
+                <input type="radio" id="ip1" name="Male" value="Male" class="form-control"> Male
+                <input type="radio" id="ip1" name="Female" value="Female" class="form-control"> Female
+            </div><br>
+            <div class="form-group">
+                <label>Phone number</label>
+                <input type="number" id="ip1" class="form-control" formControlName="phoneNumber">
+                <div *ngIf="submitted &&  registrationForm.controls['phoneNumber'].hasError('required')">
+
+                    <span class="is-invalid">Phone number is required</span>
+                </div>
+                <div *ngIf=" registrationForm.controls['phoneNumber'].dirty &&
+                registrationForm.controls['phoneNumber'].invalid">
+                    Mobile number should have 10 digits
+                </div>
+            </div>
+            <button class="button">Sign In</button>
+        </div>
+
+    </div>
+
+</form>

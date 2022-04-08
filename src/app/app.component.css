@@ -1,0 +1,8 @@
+body {
+    background-image: url('../assets/orange.jpg');
+    background-size: cover;
+}
+
+.main {
+    text-align: center;
+}
